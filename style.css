@@ -1232,36 +1232,49 @@ span {
    }
 
    /* footer section */ 
-   .footer {
+ .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 1rem;
     padding: 2rem 9%;
     background-color: var(--second-bg-color);
-   }
-   .footer-text p {
-    font-size:1.6rem
-   }
+}
 
-   .footer-icontop a {
-    height: 4rem;
-    width: 4rem;
+.footer-text {
+    min-width: 0;
+}
+
+.footer-text p {
+    font-size: clamp(1rem, 2vw, 1.6rem);
+    white-space: nowrap;
+}
+
+.footer-icontop {
+    flex-shrink: 0;
+}
+
+.footer-icontop a {
+    width: clamp(2.5rem, 5vw, 4rem);
+    height: clamp(2.5rem, 5vw, 4rem);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .8rem;
+    padding: clamp(.4rem, 1vw, .8rem);
     border-radius: .8rem;
     transition: .5s ease;
     background-color: var(--main-color);
-   }
-   .footer-icontop a:hover {
+}
+
+.footer-icontop a:hover {
     box-shadow: 0 0 1rem var(--main-color);
-   }
-   .footer-icontop a i {
-    font-size: 2.4rem;
+}
+
+.footer-icontop a i {
+    font-size: clamp(1.4rem, 3vw, 2.4rem);
     color: var(--second-bg-color);
-   }
+}
+   
 
 /* skilll section main */
 .my-skills {
