@@ -841,7 +841,7 @@ span {
     }
 
 }
-/* about skill */
+/*   about  section skill */
 .tabs {
     display: flex;
     gap: 1.5rem;
@@ -1416,6 +1416,37 @@ svg circle {
         box-shadow: 0 .5rem 1rem rgb(0, 0, 0,.2);
     }
 }
+/*  */
+@media (max-width: 418px) {
+
+    .skill-progress {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 15px;
+    }
+
+    .circle {
+        width: 130px;
+        height: 130px;
+        margin: auto;
+    }
+
+    svg {
+        width: 130px;
+        height: 130px;
+    }
+
+    .number h3 {
+        font-size: 1.8rem;
+    }
+
+    .number p {
+        font-size: 1.2rem;
+    }
+}
+
+
 /* home bar mobile responsive */
 
 /* =====================================================
